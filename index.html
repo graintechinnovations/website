@@ -47,8 +47,24 @@ footer{padding:24px 0;border-top:1px solid var(--line);color:#718079;font-size:1
 @media(max-width:700px){
 .container,.nav-inner{width:min(100% - 30px,var(--max))}.nav-links{display:none}.hero{padding-top:50px}.hero h1{font-size:47px;letter-spacing:-2.7px}.hero-copy{font-size:15px}.engine{min-height:320px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}section{padding:62px 0}.section-head{display:block;margin-bottom:27px}.section-head h2{font-size:31px;margin-bottom:13px}.solutions{grid-template-columns:1fr}.solution{border-right:0;border-bottom:1px solid var(--line);min-height:auto}.solution:last-child{border-bottom:0}.solution-number{margin-bottom:30px}
 .process-line{display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto;position:relative;overflow:visible;border:0}.process-step{padding:20px 10px 22px;border:1px solid var(--line);min-width:0}.process-step:nth-child(1){grid-column:1;grid-row:1}.process-step:nth-child(3){grid-column:3;grid-row:1}.process-step:nth-child(5){grid-column:3;grid-row:2}.process-step:nth-child(7){grid-column:1;grid-row:2}.process-connector{font-size:12px;padding:0 3px}.process-connector:nth-of-type(1){grid-column:2;grid-row:1}.process-connector:nth-of-type(2){grid-column:2;grid-row:2;transform:rotate(180deg)}.process-connector:nth-of-type(3){position:absolute;right:4px;top:50%;transform:translateY(-50%) rotate(90deg);font-size:11px}.process-step span{margin-bottom:8px;font-size:9px}.process-step h3{font-size:12px;white-space:nowrap;margin-bottom:0}.process-step p{display:none}.feedback-line{font-size:8px;padding-top:13px;white-space:nowrap}
-.tech-layout{gap:32px}.tech-intro h2{font-size:33px}.tech-stack{grid-template-columns:1fr}.flow{flex-wrap:wrap}.innovation-copy{padding:29px}.innovation-copy h2{font-size:31px}.patent-meta{grid-template-columns:1fr}.meta{border-right:0;border-bottom:1px solid var(--line)}.meta:last-child{border-bottom:0}.why-grid{grid-template-columns:1fr}.contact-copy h2{font-size:37px}.contact-form{grid-template-columns:1fr}.full,.form-note{grid-column:auto}.footer-inner{flex-direction:column}
+.tech-layout{gap:32px}.tech-intro h2{font-size:33px}.tech-orbit{width:min(100%,430px)}.orbit-core{width:112px;height:112px}.orbit-core strong{font-size:13px}.orbit-core span{font-size:7px}.orbit-node{width:92px;font-size:8px;padding:7px 5px}.flow{flex-wrap:wrap}.innovation-copy{padding:29px}.innovation-copy h2{font-size:31px}.patent-meta{grid-template-columns:1fr}.meta{border-right:0;border-bottom:1px solid var(--line)}.meta:last-child{border-bottom:0}.why-grid{grid-template-columns:1fr}.contact-copy h2{font-size:37px}.contact-form{grid-template-columns:1fr}.full,.form-note{grid-column:auto}.footer-inner{flex-direction:column}
 }
+
+/* Technology orbit */
+.tech-orbit{position:relative;width:min(100%,560px);aspect-ratio:1/1;margin:auto;display:grid;place-items:center;isolation:isolate}
+.orbit-ring{position:absolute;width:72%;height:72%;border:1px solid rgba(142,230,169,.20);border-radius:50%;box-shadow:0 0 80px rgba(59,191,112,.07)}
+.orbit-ring:before{content:"";position:absolute;inset:13%;border:1px dashed rgba(142,230,169,.13);border-radius:50%}
+.orbit-core{width:145px;height:145px;border-radius:50%;border:1px solid rgba(142,230,169,.65);background:radial-gradient(circle,rgba(59,191,112,.18),#0b1b13 68%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:3;box-shadow:0 0 45px rgba(59,191,112,.12)}
+.orbit-core strong{font-size:17px;letter-spacing:1.2px}.orbit-core span{font-size:9px;color:var(--green);letter-spacing:1.8px;margin-top:4px}
+.orbit-track{position:absolute;inset:0;animation:orbitSpin 28s linear infinite}
+.orbit-node{position:absolute;width:116px;min-height:48px;padding:8px 9px;border:1px solid rgba(255,255,255,.10);background:rgba(7,17,13,.93);display:flex;align-items:center;justify-content:center;text-align:center;color:#c4d0ca;font-size:10px;line-height:1.25;letter-spacing:.2px;transform:translate(-50%,-50%);z-index:2}
+.orbit-node:after{content:"";position:absolute;width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 12px rgba(142,230,169,.55)}
+.n1{left:50%;top:14%}.n2{left:80%;top:29%}.n3{left:88%;top:61%}.n4{left:70%;top:86%}.n5{left:30%;top:86%}.n6{left:12%;top:61%}.n7{left:20%;top:29%}
+@keyframes orbitSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.orbit-node{animation:counterSpin 28s linear infinite}
+@keyframes counterSpin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(-360deg)}}
+.tech-orbit:hover .orbit-track,.tech-orbit:hover .orbit-node{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.orbit-track,.orbit-node{animation:none!important}}
 </style>
 </head>
 <body>
@@ -97,13 +113,18 @@ footer{padding:24px 0;border-top:1px solid var(--line);color:#718079;font-size:1
 
 <section id="technology"><div class="container tech-layout">
 <div class="tech-intro"><div class="section-label">Technology</div><h2>The right intelligence for the right decision.</h2><p>Our systems combine analytical models with AI to transform complex operational data into recommendations teams can act on.</p><div class="flow"><span>DATA</span><i>→</i><span>INTELLIGENCE</span><i>→</i><span>ACTION</span></div></div>
-<div class="tech-stack">
-<div class="tech"><strong>Mathematical Optimization</strong><p>Constraint-based decision models.</p></div>
-<div class="tech"><strong>Machine Learning</strong><p>Predictive and data-driven intelligence.</p></div>
-<div class="tech"><strong>Computer Vision</strong><p>Automated visual inspection and classification.</p></div>
-<div class="tech"><strong>Predictive Analytics</strong><p>Identify patterns and anticipate outcomes.</p></div>
-<div class="tech"><strong>AI &amp; LLMs</strong><p>Intelligent interfaces and decision workflows.</p></div>
-<div class="tech"><strong>Simulation</strong><p>Evaluate decisions before deployment.</p></div>
+<div class="tech-orbit" aria-label="GrainTech technology capabilities">
+  <div class="orbit-ring"></div>
+  <div class="orbit-core"><strong>GRAINTECH</strong><span>INTELLIGENCE</span></div>
+  <div class="orbit-track">
+    <div class="orbit-node n1"><b>Mathematical<br>Optimization</b></div>
+    <div class="orbit-node n2"><b>Machine<br>Learning</b></div>
+    <div class="orbit-node n3"><b>Data<br>Constraints</b></div>
+    <div class="orbit-node n4"><b>Computer<br>Vision</b></div>
+    <div class="orbit-node n5"><b>Predictive<br>Analytics</b></div>
+    <div class="orbit-node n6"><b>AI &amp; LLMs</b></div>
+    <div class="orbit-node n7"><b>Simulation</b></div>
+  </div>
 </div></div></section>
 
 <section id="innovation" class="innovation"><div class="container"><div class="innovation-box">
