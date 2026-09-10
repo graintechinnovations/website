@@ -5,9 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>GrainTech Innovations | AI-Powered Decision Intelligence</title>
-<meta name="description" content="GrainTech Innovations builds AI-powered decision intelligence solutions for industrial, manufacturing and AgriTech applications.">
+
+<meta
+  name="description"
+  content="GrainTech Innovations builds AI-powered decision intelligence solutions for industrial, manufacturing and AgriTech applications."
+>
 
 <style>
+
 :root{
   --bg:#07110d;
   --bg2:#091812;
@@ -33,7 +38,15 @@ html{
 }
 
 body{
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
   background:var(--bg);
   color:var(--text);
   line-height:1.6;
@@ -49,22 +62,31 @@ a{
   margin:auto;
 }
 
-/* NAV */
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 nav{
-  height:76px;
+  height:72px;
+
   display:flex;
   align-items:center;
+
   border-bottom:1px solid var(--line);
+
   position:relative;
-  z-index:10;
-  background:rgba(7,17,13,.88);
+  z-index:20;
+
+  background:rgba(7,17,13,.90);
+
   backdrop-filter:blur(14px);
 }
 
 .nav-inner{
   width:min(var(--max),calc(100% - 48px));
   margin:auto;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -73,7 +95,7 @@ nav{
 .logo{
   font-size:18px;
   font-weight:750;
-  letter-spacing:-.4px;
+  letter-spacing:-.5px;
 }
 
 .logo span{
@@ -82,9 +104,11 @@ nav{
 
 .nav-links{
   display:flex;
-  gap:32px;
+  gap:30px;
+
   color:#b9c5bf;
-  font-size:14px;
+
+  font-size:13px;
 }
 
 .nav-links a{
@@ -95,32 +119,46 @@ nav{
   color:var(--white);
 }
 
-/* HERO */
+
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
-  min-height:650px;
+  min-height:620px;
+
   display:grid;
   grid-template-columns:1.05fr .95fr;
+
   align-items:center;
+
   gap:70px;
-  padding:72px 0 60px;
+
+  padding:62px 0 52px;
 }
 
 .eyebrow{
   color:var(--green);
-  font-size:12px;
+
+  font-size:11px;
   font-weight:700;
+
   letter-spacing:2px;
   text-transform:uppercase;
-  margin-bottom:20px;
+
+  margin-bottom:18px;
 }
 
 .hero h1{
-  font-size:clamp(48px,6vw,78px);
+  font-size:clamp(48px,6vw,76px);
+
   line-height:.98;
+
   letter-spacing:-4px;
+
   max-width:700px;
-  margin-bottom:25px;
+
+  margin-bottom:24px;
 }
 
 .hero h1 span{
@@ -129,31 +167,43 @@ nav{
 
 .hero-copy{
   color:var(--muted);
-  font-size:18px;
-  max-width:600px;
+
+  font-size:17px;
+
+  max-width:590px;
+
   line-height:1.65;
 }
 
 .hero-actions{
   display:flex;
-  gap:14px;
-  margin-top:32px;
+
+  gap:12px;
+
+  margin-top:29px;
 }
 
 .btn{
   display:inline-flex;
+
   align-items:center;
   justify-content:center;
-  padding:12px 19px;
+
+  padding:11px 18px;
+
   border:1px solid var(--line);
-  font-size:14px;
+
+  font-size:13px;
   font-weight:650;
+
   transition:.2s;
 }
 
 .btn.primary{
   background:var(--green);
+
   color:#07110d;
+
   border-color:var(--green);
 }
 
@@ -165,38 +215,71 @@ nav{
   border-color:rgba(142,230,169,.5);
 }
 
-/* HERO VISUAL */
+
+/* =========================================================
+   HERO DECISION ENGINE
+========================================================= */
 
 .engine{
-  min-height:410px;
+  min-height:390px;
+
   border:1px solid var(--line);
+
   background:
-    radial-gradient(circle at 50% 42%,rgba(59,191,112,.15),transparent 32%),
-    linear-gradient(145deg,#0e2118,#07120e);
+    radial-gradient(
+      circle at 50% 42%,
+      rgba(59,191,112,.15),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      #0e2118,
+      #07120e
+    );
+
   position:relative;
+
   overflow:hidden;
 }
 
 .engine-grid{
   position:absolute;
+
   inset:0;
-  opacity:.32;
+
+  opacity:.30;
+
   background-image:
-    linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+    linear-gradient(
+      rgba(255,255,255,.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.07) 1px,
+      transparent 1px
+    );
+
   background-size:42px 42px;
 }
 
 .engine-core{
   position:absolute;
-  width:170px;
-  height:170px;
-  border:1px solid rgba(142,230,169,.6);
+
+  width:155px;
+  height:155px;
+
+  border:1px solid rgba(142,230,169,.65);
+
   border-radius:50%;
+
   left:50%;
   top:50%;
+
   transform:translate(-50%,-50%);
+
   display:flex;
+
   align-items:center;
   justify-content:center;
 }
@@ -204,66 +287,103 @@ nav{
 .engine-core:before,
 .engine-core:after{
   content:"";
+
   position:absolute;
+
   border:1px solid rgba(142,230,169,.22);
+
   border-radius:50%;
 }
 
 .engine-core:before{
-  width:240px;
-  height:240px;
+  width:225px;
+  height:225px;
 }
 
 .engine-core:after{
-  width:320px;
-  height:320px;
+  width:300px;
+  height:300px;
 }
 
 .core-label{
   text-align:center;
+
   position:relative;
+
   z-index:2;
 }
 
 .core-label strong{
   display:block;
-  font-size:22px;
+
+  font-size:21px;
+
   letter-spacing:-.7px;
 }
 
 .core-label span{
   color:var(--green);
-  font-size:11px;
+
+  font-size:10px;
+
   text-transform:uppercase;
+
   letter-spacing:1.5px;
 }
 
 .signal{
   position:absolute;
-  padding:7px 10px;
+
+  padding:6px 9px;
+
   border:1px solid var(--line);
-  background:rgba(7,17,13,.9);
-  font-size:10px;
+
+  background:rgba(7,17,13,.92);
+
+  font-size:9px;
+
   color:#b8c7bf;
-  letter-spacing:.6px;
+
+  letter-spacing:.7px;
 }
 
-.signal.s1{top:19%;left:10%;}
-.signal.s2{top:27%;right:8%;}
-.signal.s3{bottom:23%;left:8%;}
-.signal.s4{bottom:16%;right:12%;}
+.signal.s1{
+  top:18%;
+  left:9%;
+}
 
-/* STATS */
+.signal.s2{
+  top:25%;
+  right:7%;
+}
+
+.signal.s3{
+  bottom:22%;
+  left:7%;
+}
+
+.signal.s4{
+  bottom:15%;
+  right:11%;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
 
 .stats{
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
+
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
 
 .stat{
-  padding:25px 28px;
+  padding:23px 27px;
+
   border-right:1px solid var(--line);
 }
 
@@ -273,66 +393,96 @@ nav{
 
 .stat strong{
   display:block;
+
   color:var(--green);
-  font-size:30px;
+
+  font-size:29px;
+
   line-height:1;
-  margin-bottom:8px;
+
+  margin-bottom:7px;
 }
 
 .stat span{
   color:var(--muted);
-  font-size:12px;
+
+  font-size:11px;
+
   text-transform:uppercase;
+
   letter-spacing:.8px;
 }
 
-/* SECTION */
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
 
 section{
-  padding:82px 0;
+  padding:76px 0;
 }
 
 .section-head{
   display:flex;
+
   justify-content:space-between;
+
   align-items:flex-end;
+
   gap:40px;
-  margin-bottom:38px;
+
+  margin-bottom:34px;
 }
 
 .section-label{
   color:var(--green);
-  font-size:11px;
+
+  font-size:10px;
+
   text-transform:uppercase;
+
   letter-spacing:2px;
+
   font-weight:700;
-  margin-bottom:11px;
+
+  margin-bottom:10px;
 }
 
 .section-head h2{
-  font-size:38px;
+  font-size:37px;
+
   line-height:1.05;
+
   letter-spacing:-1.8px;
 }
 
 .section-head p{
   max-width:450px;
+
   color:var(--muted);
-  font-size:15px;
+
+  font-size:14px;
 }
 
-/* SOLUTIONS */
+
+/* =========================================================
+   SOLUTIONS
+========================================================= */
 
 .solutions{
   display:grid;
+
   grid-template-columns:repeat(3,1fr);
+
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
 
 .solution{
-  padding:30px;
-  min-height:270px;
+  padding:28px;
+
+  min-height:255px;
+
   border-right:1px solid var(--line);
 }
 
@@ -342,174 +492,419 @@ section{
 
 .solution-number{
   color:var(--green);
-  font-size:11px;
+
+  font-size:10px;
+
   letter-spacing:1.5px;
-  margin-bottom:58px;
+
+  margin-bottom:55px;
 }
 
 .solution h3{
-  font-size:23px;
+  font-size:22px;
+
   letter-spacing:-.7px;
-  margin-bottom:12px;
+
+  margin-bottom:10px;
 }
 
 .solution p{
   color:var(--muted);
-  font-size:14px;
+
+  font-size:13px;
+
   line-height:1.65;
 }
 
-/* APPROACH */
+
+/* =========================================================
+   APPROACH / CYCLIC PROCESS
+========================================================= */
 
 .approach{
   background:var(--bg2);
+
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
 
-.process{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--green2);
-  border-bottom:1px solid var(--line);
+.cycle{
+  position:relative;
+
+  width:760px;
+
+  max-width:100%;
+
+  height:500px;
+
+  margin:10px auto 0;
 }
 
-.step{
-  padding:28px 26px 30px;
-  border-right:1px solid var(--line);
+
+/* Outer circular system */
+
+.cycle:before{
+  content:"";
+
+  position:absolute;
+
+  width:365px;
+  height:365px;
+
+  border:1px solid rgba(142,230,169,.24);
+
+  border-radius:50%;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
 }
 
-.step:last-child{
-  border-right:none;
+.cycle:after{
+  content:"";
+
+  position:absolute;
+
+  width:282px;
+  height:282px;
+
+  border:1px dashed rgba(142,230,169,.14);
+
+  border-radius:50%;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
 }
 
-.step b{
-  display:block;
+
+/* Central element */
+
+.cycle-center{
+  position:absolute;
+
+  width:145px;
+  height:145px;
+
+  border:1px solid var(--green);
+
+  border-radius:50%;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  background:var(--bg);
+
+  z-index:5;
+}
+
+.cycle-center strong{
+  font-size:16px;
+
+  letter-spacing:-.4px;
+}
+
+.cycle-center span{
   color:var(--green);
-  font-size:11px;
+
+  font-size:9px;
+
   letter-spacing:1.5px;
-  margin-bottom:42px;
+
+  margin-top:3px;
 }
 
-.step h3{
+
+/* Process steps */
+
+.cycle-step{
+  position:absolute;
+
+  width:210px;
+
+  z-index:3;
+}
+
+.cycle-step b{
+  color:var(--green);
+
+  font-size:10px;
+
+  letter-spacing:1.5px;
+}
+
+.cycle-step h3{
   font-size:21px;
-  margin-bottom:9px;
+
+  margin:5px 0 7px;
+
   letter-spacing:-.5px;
 }
 
-.step p{
+.cycle-step p{
   color:var(--muted);
-  font-size:13px;
-  line-height:1.6;
+
+  font-size:12px;
+
+  line-height:1.55;
 }
 
-/* TECHNOLOGY */
+
+/* Positions */
+
+.cycle-1{
+  left:0;
+
+  top:35px;
+
+  text-align:right;
+}
+
+.cycle-2{
+  right:0;
+
+  top:35px;
+}
+
+.cycle-3{
+  right:0;
+
+  bottom:35px;
+}
+
+.cycle-4{
+  left:0;
+
+  bottom:35px;
+
+  text-align:right;
+}
+
+
+/* Direction indicators */
+
+.cycle-arrow{
+  position:absolute;
+
+  color:var(--green);
+
+  font-size:21px;
+
+  z-index:6;
+}
+
+.arrow-1{
+  left:50%;
+
+  top:15px;
+
+  transform:translateX(-50%);
+}
+
+.arrow-2{
+  right:35px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+}
+
+.arrow-3{
+  left:50%;
+
+  bottom:12px;
+
+  transform:translateX(-50%) rotate(90deg);
+}
+
+.arrow-4{
+  left:35px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+}
+
+
+/* Bottom explanation */
+
+.cycle-note{
+  text-align:center;
+
+  margin-top:-2px;
+
+  color:#718079;
+
+  font-size:10px;
+
+  letter-spacing:1.6px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+========================================================= */
 
 .tech-layout{
   display:grid;
+
   grid-template-columns:.8fr 1.2fr;
-  gap:70px;
+
+  gap:65px;
+
   align-items:center;
 }
 
 .tech-intro h2{
-  font-size:40px;
+  font-size:39px;
+
   line-height:1.05;
+
   letter-spacing:-1.8px;
-  margin-bottom:18px;
+
+  margin-bottom:17px;
 }
 
 .tech-intro p{
   color:var(--muted);
-  font-size:15px;
+
+  font-size:14px;
 }
 
 .tech-stack{
   display:grid;
+
   grid-template-columns:repeat(2,1fr);
+
   border-top:1px solid var(--line);
+
   border-left:1px solid var(--line);
 }
 
 .tech{
-  padding:25px;
+  padding:23px;
+
   border-right:1px solid var(--line);
+
   border-bottom:1px solid var(--line);
 }
 
 .tech strong{
-  font-size:16px;
+  font-size:15px;
 }
 
 .tech p{
   color:var(--muted);
-  font-size:12px;
+
+  font-size:11px;
+
   margin-top:5px;
 }
 
-/* FLOW */
-
 .flow{
-  margin-top:34px;
+  margin-top:28px;
+
   display:flex;
+
   align-items:center;
-  gap:12px;
+
+  gap:10px;
+
   color:var(--muted);
-  font-size:12px;
+
+  font-size:11px;
 }
 
 .flow span{
-  padding:9px 13px;
+  padding:8px 11px;
+
   border:1px solid var(--line);
 }
 
 .flow i{
   color:var(--green);
+
   font-style:normal;
 }
 
-/* INNOVATION */
+
+/* =========================================================
+   INNOVATION / PATENT
+========================================================= */
 
 .innovation{
-  padding-top:68px;
-  padding-bottom:68px;
+  padding-top:65px;
+
+  padding-bottom:65px;
 }
 
 .innovation-box{
   display:grid;
+
   grid-template-columns:1fr 1fr;
+
   border:1px solid var(--line);
-  background:linear-gradient(135deg,#0d2117,#0a1711);
+
+  background:
+    linear-gradient(
+      135deg,
+      #0d2117,
+      #0a1711
+    );
 }
 
 .innovation-copy{
-  padding:42px;
+  padding:38px;
 }
 
 .innovation-copy h2{
-  font-size:38px;
+  font-size:36px;
+
   line-height:1.05;
+
   letter-spacing:-1.7px;
-  margin-bottom:16px;
+
+  margin-bottom:15px;
 }
 
 .innovation-copy p{
   color:var(--muted);
+
   max-width:500px;
-  font-size:14px;
+
+  font-size:13px;
 }
 
 .patent-meta{
   display:grid;
+
   grid-template-columns:1fr 1fr;
+
   border-left:1px solid var(--line);
 }
 
 .meta{
-  padding:42px 30px;
+  padding:35px 28px;
+
   display:flex;
+
   flex-direction:column;
+
   justify-content:center;
+
   border-right:1px solid var(--line);
 }
 
@@ -519,18 +914,26 @@ section{
 
 .meta small{
   color:var(--muted);
-  font-size:10px;
+
+  font-size:9px;
+
   text-transform:uppercase;
+
   letter-spacing:1.4px;
-  margin-bottom:10px;
+
+  margin-bottom:9px;
 }
 
 .meta strong{
   color:var(--green);
-  font-size:21px;
+
+  font-size:19px;
 }
 
-/* WHY */
+
+/* =========================================================
+   WHY GRAINTECH
+========================================================= */
 
 .why{
   border-top:1px solid var(--line);
@@ -538,77 +941,113 @@ section{
 
 .why-grid{
   display:grid;
+
   grid-template-columns:repeat(3,1fr);
+
   gap:1px;
+
   background:var(--line);
+
   border:1px solid var(--line);
 }
 
 .why-item{
   background:var(--bg);
-  padding:30px;
+
+  padding:28px;
 }
 
 .why-item h3{
   font-size:18px;
-  margin-bottom:9px;
+
+  margin-bottom:8px;
 }
 
 .why-item p{
   color:var(--muted);
-  font-size:13px;
+
+  font-size:12px;
+
+  line-height:1.6;
 }
 
-/* CONTACT */
+
+/* =========================================================
+   CONTACT
+========================================================= */
 
 .contact{
   background:var(--bg2);
+
   border-top:1px solid var(--line);
 }
 
 .contact-layout{
   display:grid;
+
   grid-template-columns:.85fr 1.15fr;
-  gap:80px;
+
+  gap:75px;
+
   align-items:start;
 }
 
 .contact-copy h2{
-  font-size:46px;
+  font-size:44px;
+
   line-height:1;
+
   letter-spacing:-2px;
-  margin-bottom:18px;
+
+  margin-bottom:17px;
 }
 
 .contact-copy p{
   color:var(--muted);
+
   max-width:430px;
-  font-size:15px;
+
+  font-size:14px;
 }
 
 .email{
   display:inline-block;
-  margin-top:28px;
+
+  margin-top:25px;
+
   color:var(--green);
-  font-size:15px;
+
+  font-size:14px;
 }
+
+
+/* FORM */
 
 .contact-form{
   display:grid;
+
   grid-template-columns:1fr 1fr;
-  gap:14px;
+
+  gap:12px;
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form select{
   width:100%;
-  padding:13px 14px;
+
+  padding:12px 13px;
+
   background:#07130e;
+
   border:1px solid var(--line);
+
   color:var(--text);
+
   font-family:inherit;
-  font-size:13px;
+
+  font-size:12px;
+
   outline:none;
 }
 
@@ -619,7 +1058,8 @@ section{
 }
 
 .contact-form textarea{
-  min-height:125px;
+  min-height:120px;
+
   resize:vertical;
 }
 
@@ -633,31 +1073,48 @@ section{
 
 .form-note{
   grid-column:1/-1;
+
   color:#77867f;
-  font-size:11px;
-  margin-top:-4px;
+
+  font-size:10px;
+
+  margin-top:-2px;
 }
+
+
+/* Honeypot */
 
 .honey{
   display:none!important;
 }
 
-/* FOOTER */
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
-  padding:26px 0;
+  padding:24px 0;
+
   border-top:1px solid var(--line);
+
   color:#718079;
-  font-size:11px;
+
+  font-size:10px;
 }
 
 .footer-inner{
   display:flex;
+
   justify-content:space-between;
+
   gap:20px;
 }
 
-/* RESPONSIVE */
+
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media(max-width:900px){
 
@@ -669,21 +1126,21 @@ footer{
 
   .hero{
     min-height:auto;
-    padding:65px 0 45px;
-    gap:45px;
+
+    padding:60px 0 45px;
+
+    gap:42px;
   }
 
   .engine{
     min-height:350px;
   }
 
-  .solutions,
-  .process{
+  .solutions{
     grid-template-columns:1fr 1fr;
   }
 
-  .solution:nth-child(2),
-  .step:nth-child(2){
+  .solution:nth-child(2){
     border-right:none;
   }
 
@@ -691,12 +1148,8 @@ footer{
     border-top:1px solid var(--line);
   }
 
-  .step:nth-child(n+3){
-    border-top:1px solid var(--line);
-  }
-
-  .why-grid{
-    grid-template-columns:1fr;
+  .tech-layout{
+    gap:40px;
   }
 
   .innovation-box{
@@ -705,15 +1158,22 @@ footer{
 
   .patent-meta{
     border-left:none;
+
     border-top:1px solid var(--line);
   }
 
   .contact-layout{
     gap:45px;
   }
+
 }
 
-@media(max-width:650px){
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px){
 
   .container,
   .nav-inner{
@@ -724,13 +1184,22 @@ footer{
     display:none;
   }
 
+  .hero{
+    padding-top:50px;
+  }
+
   .hero h1{
-    font-size:48px;
-    letter-spacing:-2.5px;
+    font-size:47px;
+
+    letter-spacing:-2.7px;
   }
 
   .hero-copy{
-    font-size:16px;
+    font-size:15px;
+  }
+
+  .engine{
+    min-height:320px;
   }
 
   .stats{
@@ -745,55 +1214,115 @@ footer{
     border-top:1px solid var(--line);
   }
 
+  section{
+    padding:62px 0;
+  }
+
   .section-head{
     display:block;
-    margin-bottom:28px;
+
+    margin-bottom:27px;
   }
 
   .section-head h2{
-    font-size:32px;
-    margin-bottom:14px;
+    font-size:31px;
+
+    margin-bottom:13px;
   }
 
-  .solutions,
-  .process{
+  .solutions{
     grid-template-columns:1fr;
   }
 
-  .solution,
-  .step{
+  .solution{
     border-right:none;
+
     border-bottom:1px solid var(--line);
+
+    min-height:auto;
   }
 
-  .solution:last-child,
-  .step:last-child{
+  .solution:last-child{
     border-bottom:none;
   }
 
-  .solution:nth-child(3),
-  .step:nth-child(n+3){
-    border-top:none;
+  .solution-number{
+    margin-bottom:30px;
   }
 
+
+  /* Mobile approach becomes a clean vertical process */
+
+  .cycle{
+    height:auto;
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:14px;
+
+    margin-top:25px;
+  }
+
+  .cycle:before,
+  .cycle:after,
+  .cycle-center,
+  .cycle-arrow{
+    display:none;
+  }
+
+  .cycle-step{
+    position:relative;
+
+    width:auto;
+
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+
+    text-align:left;
+
+    padding:20px;
+
+    border:1px solid var(--line);
+
+    background:var(--card);
+  }
+
+  .cycle-note{
+    margin-top:22px;
+
+    line-height:1.8;
+  }
+
+
   .tech-layout{
-    gap:35px;
+    gap:32px;
   }
 
   .tech-intro h2{
-    font-size:34px;
+    font-size:33px;
+  }
+
+  .tech-stack{
+    grid-template-columns:1fr;
   }
 
   .flow{
     flex-wrap:wrap;
   }
 
+
   .innovation-copy{
-    padding:30px;
+    padding:29px;
   }
 
   .innovation-copy h2{
-    font-size:32px;
+    font-size:31px;
   }
 
   .patent-meta{
@@ -802,6 +1331,7 @@ footer{
 
   .meta{
     border-right:none;
+
     border-bottom:1px solid var(--line);
   }
 
@@ -809,8 +1339,14 @@ footer{
     border-bottom:none;
   }
 
+
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+
   .contact-copy h2{
-    font-size:38px;
+    font-size:37px;
   }
 
   .contact-form{
@@ -828,16 +1364,27 @@ footer{
   .footer-inner{
     flex-direction:column;
   }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- NAV -->
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
 <nav>
+
   <div class="nav-inner">
-    <a href="#" class="logo">GrainTech <span>Innovations</span></a>
+
+    <a href="#" class="logo">
+      GrainTech <span>Innovations</span>
+    </a>
 
     <div class="nav-links">
       <a href="#solutions">Solutions</a>
@@ -846,15 +1393,24 @@ footer{
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
+
   </div>
+
 </nav>
 
 
-<!-- HERO -->
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <header class="container hero">
 
   <div>
-    <div class="eyebrow">AI-Powered Decision Intelligence</div>
+
+    <div class="eyebrow">
+      AI-Powered Decision Intelligence
+    </div>
 
     <h1>
       Better decisions.<br>
@@ -862,32 +1418,63 @@ footer{
     </h1>
 
     <p class="hero-copy">
-      GrainTech Innovations builds practical AI and optimization systems
-      that help businesses make better decisions across manufacturing,
-      industrial operations and AgriTech.
+      GrainTech Innovations builds practical AI and optimization
+      systems that help businesses make better decisions across
+      manufacturing, industrial operations and AgriTech.
     </p>
 
     <div class="hero-actions">
-      <a href="#solutions" class="btn primary">Explore solutions</a>
-      <a href="#contact" class="btn secondary">Talk to us</a>
+
+      <a href="#solutions" class="btn primary">
+        Explore solutions
+      </a>
+
+      <a href="#contact" class="btn secondary">
+        Talk to us
+      </a>
+
     </div>
+
   </div>
 
+
+  <!-- Decision Engine Visual -->
 
   <div class="engine">
 
     <div class="engine-grid"></div>
 
-    <div class="signal s1">DATA</div>
-    <div class="signal s2">CONSTRAINTS</div>
-    <div class="signal s3">ML MODELS</div>
-    <div class="signal s4">OPERATIONS</div>
+    <div class="signal s1">
+      DATA
+    </div>
+
+    <div class="signal s2">
+      CONSTRAINTS
+    </div>
+
+    <div class="signal s3">
+      ML MODELS
+    </div>
+
+    <div class="signal s4">
+      OPERATIONS
+    </div>
+
 
     <div class="engine-core">
+
       <div class="core-label">
-        <strong>DECISION</strong>
-        <span>ENGINE</span>
+
+        <strong>
+          DECISION
+        </strong>
+
+        <span>
+          ENGINE
+        </span>
+
       </div>
+
     </div>
 
   </div>
@@ -895,43 +1482,84 @@ footer{
 </header>
 
 
-<!-- STATS -->
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
 <div class="container stats">
 
   <div class="stat">
+
     <strong>10+</strong>
-    <span>Clients served</span>
+
+    <span>
+      Clients served
+    </span>
+
   </div>
 
+
   <div class="stat">
+
     <strong>01</strong>
-    <span>Granted Indian patent</span>
+
+    <span>
+      Granted Indian patent
+    </span>
+
   </div>
 
+
   <div class="stat">
+
     <strong>03</strong>
-    <span>Core solution areas</span>
+
+    <span>
+      Core solution areas
+    </span>
+
   </div>
 
+
   <div class="stat">
+
     <strong>AI</strong>
-    <span>Decision intelligence</span>
+
+    <span>
+      Decision intelligence
+    </span>
+
   </div>
 
 </div>
 
 
-<!-- SOLUTIONS -->
+
+<!-- =====================================================
+     SOLUTIONS
+===================================================== -->
+
 <section id="solutions">
 
   <div class="container">
 
+
     <div class="section-head">
 
       <div>
-        <div class="section-label">What we solve</div>
-        <h2>Intelligence built<br>around real problems.</h2>
+
+        <div class="section-label">
+          What we solve
+        </div>
+
+        <h2>
+          Intelligence built<br>
+          around real problems.
+        </h2>
+
       </div>
+
 
       <p>
         We combine mathematical optimization, machine learning,
@@ -941,13 +1569,21 @@ footer{
     </div>
 
 
+
     <div class="solutions">
+
+
+      <!-- Solution 01 -->
 
       <div class="solution">
 
-        <div class="solution-number">01 / MANUFACTURING</div>
+        <div class="solution-number">
+          01 / MANUFACTURING
+        </div>
 
-        <h3>Formula Optimization</h3>
+        <h3>
+          Formula Optimization
+        </h3>
 
         <p>
           Optimize formulations against cost, quality and operational
@@ -957,11 +1593,18 @@ footer{
       </div>
 
 
+
+      <!-- Solution 02 -->
+
       <div class="solution">
 
-        <div class="solution-number">02 / INDUSTRIAL</div>
+        <div class="solution-number">
+          02 / INDUSTRIAL
+        </div>
 
-        <h3>Foundry Charge Mix Optimization</h3>
+        <h3>
+          Foundry Charge Mix Optimization
+        </h3>
 
         <p>
           Optimize charge mixes using material constraints, chemistry,
@@ -971,11 +1614,18 @@ footer{
       </div>
 
 
+
+      <!-- Solution 03 -->
+
       <div class="solution">
 
-        <div class="solution-number">03 / AGRITECH</div>
+        <div class="solution-number">
+          03 / AGRITECH
+        </div>
 
-        <h3>AgriTech Intelligence</h3>
+        <h3>
+          AgriTech Intelligence
+        </h3>
 
         <p>
           Use computer vision and AI to assess agricultural produce,
@@ -985,6 +1635,7 @@ footer{
 
       </div>
 
+
     </div>
 
   </div>
@@ -992,79 +1643,193 @@ footer{
 </section>
 
 
-<!-- APPROACH -->
+
+<!-- =====================================================
+     APPROACH
+===================================================== -->
+
 <section class="approach">
 
   <div class="container">
 
+
     <div class="section-head">
 
       <div>
-        <div class="section-label">Our approach</div>
-        <h2>From complexity<br>to action.</h2>
+
+        <div class="section-label">
+          Our approach
+        </div>
+
+        <h2>
+          Intelligence that<br>
+          keeps improving.
+        </h2>
+
       </div>
 
+
       <p>
-        We translate operational problems into decision systems that
-        can work within real-world constraints.
+        We turn complex operational problems into decision systems —
+        then continuously improve them through data, feedback and results.
       </p>
 
     </div>
 
 
-    <!-- INFORMATIONAL ONLY — NOT CLICKABLE -->
-    <div class="process">
 
-      <div class="step">
-        <b>01</b>
-        <h3>Understand</h3>
+    <!-- CYCLIC PROCESS -->
+
+    <div class="cycle">
+
+
+      <!-- Center -->
+
+      <div class="cycle-center">
+
+        <strong>
+          DECISION
+        </strong>
+
+        <span>
+          INTELLIGENCE
+        </span>
+
+      </div>
+
+
+
+      <!-- 01 -->
+
+      <div class="cycle-step cycle-1">
+
+        <b>
+          01
+        </b>
+
+        <h3>
+          Understand
+        </h3>
+
         <p>
           Map the process, constraints, objectives and available data.
         </p>
+
       </div>
 
-      <div class="step">
-        <b>02</b>
-        <h3>Model</h3>
+
+
+      <!-- 02 -->
+
+      <div class="cycle-step cycle-2">
+
+        <b>
+          02
+        </b>
+
+        <h3>
+          Model
+        </h3>
+
         <p>
           Build an optimization, ML or computer-vision engine around
           the problem.
         </p>
+
       </div>
 
-      <div class="step">
-        <b>03</b>
-        <h3>Optimize</h3>
+
+
+      <!-- 03 -->
+
+      <div class="cycle-step cycle-3">
+
+        <b>
+          03
+        </b>
+
+        <h3>
+          Optimize
+        </h3>
+
         <p>
           Generate recommendations that balance cost, quality and
           operational constraints.
         </p>
+
       </div>
 
-      <div class="step">
-        <b>04</b>
-        <h3>Deploy</h3>
+
+
+      <!-- 04 -->
+
+      <div class="cycle-step cycle-4">
+
+        <b>
+          04
+        </b>
+
+        <h3>
+          Deploy
+        </h3>
+
         <p>
           Put the intelligence into a usable workflow, dashboard or
           enterprise system.
         </p>
+
       </div>
 
+
+
+      <!-- Direction indicators -->
+
+      <div class="cycle-arrow arrow-1">
+        ↓
+      </div>
+
+      <div class="cycle-arrow arrow-2">
+        →
+      </div>
+
+      <div class="cycle-arrow arrow-3">
+        ↑
+      </div>
+
+      <div class="cycle-arrow arrow-4">
+        ←
+      </div>
+
+
     </div>
+
+
+
+    <div class="cycle-note">
+      DATA → DECISIONS → RESULTS → FEEDBACK → BETTER DECISIONS
+    </div>
+
 
   </div>
 
 </section>
 
 
-<!-- TECHNOLOGY -->
+
+<!-- =====================================================
+     TECHNOLOGY
+===================================================== -->
+
 <section id="technology">
 
   <div class="container tech-layout">
 
+
     <div class="tech-intro">
 
-      <div class="section-label">Technology</div>
+      <div class="section-label">
+        Technology
+      </div>
 
       <h2>
         The right intelligence
@@ -1076,48 +1841,115 @@ footer{
         complex operational data into recommendations teams can act on.
       </p>
 
+
       <div class="flow">
-        <span>DATA</span>
-        <i>→</i>
-        <span>INTELLIGENCE</span>
-        <i>→</i>
-        <span>ACTION</span>
+
+        <span>
+          DATA
+        </span>
+
+        <i>
+          →
+        </i>
+
+        <span>
+          INTELLIGENCE
+        </span>
+
+        <i>
+          →
+        </i>
+
+        <span>
+          ACTION
+        </span>
+
       </div>
 
     </div>
 
 
+
     <div class="tech-stack">
 
-      <div class="tech">
-        <strong>Mathematical Optimization</strong>
-        <p>Constraint-based decision models.</p>
-      </div>
 
       <div class="tech">
-        <strong>Machine Learning</strong>
-        <p>Predictive and data-driven intelligence.</p>
+
+        <strong>
+          Mathematical Optimization
+        </strong>
+
+        <p>
+          Constraint-based decision models.
+        </p>
+
       </div>
 
-      <div class="tech">
-        <strong>Computer Vision</strong>
-        <p>Automated visual inspection and classification.</p>
-      </div>
 
       <div class="tech">
-        <strong>Predictive Analytics</strong>
-        <p>Identify patterns and anticipate outcomes.</p>
+
+        <strong>
+          Machine Learning
+        </strong>
+
+        <p>
+          Predictive and data-driven intelligence.
+        </p>
+
       </div>
 
-      <div class="tech">
-        <strong>AI &amp; LLMs</strong>
-        <p>Intelligent interfaces and decision workflows.</p>
-      </div>
 
       <div class="tech">
-        <strong>Simulation</strong>
-        <p>Evaluate decisions before deployment.</p>
+
+        <strong>
+          Computer Vision
+        </strong>
+
+        <p>
+          Automated visual inspection and classification.
+        </p>
+
       </div>
+
+
+      <div class="tech">
+
+        <strong>
+          Predictive Analytics
+        </strong>
+
+        <p>
+          Identify patterns and anticipate outcomes.
+        </p>
+
+      </div>
+
+
+      <div class="tech">
+
+        <strong>
+          AI &amp; LLMs
+        </strong>
+
+        <p>
+          Intelligent interfaces and decision workflows.
+        </p>
+
+      </div>
+
+
+      <div class="tech">
+
+        <strong>
+          Simulation
+        </strong>
+
+        <p>
+          Evaluate decisions before deployment.
+        </p>
+
+      </div>
+
 
     </div>
 
@@ -1126,16 +1958,24 @@ footer{
 </section>
 
 
-<!-- INNOVATION -->
+
+<!-- =====================================================
+     INNOVATION
+===================================================== -->
+
 <section id="innovation" class="innovation">
 
   <div class="container">
 
+
     <div class="innovation-box">
+
 
       <div class="innovation-copy">
 
-        <div class="section-label">Innovation</div>
+        <div class="section-label">
+          Innovation
+        </div>
 
         <h2>
           Turning AI research<br>
@@ -1151,19 +1991,38 @@ footer{
       </div>
 
 
+
       <div class="patent-meta">
 
-        <div class="meta">
-          <small>Status</small>
-          <strong>Granted</strong>
-        </div>
 
         <div class="meta">
-          <small>Focus</small>
-          <strong>AgriTech AI</strong>
+
+          <small>
+            Status
+          </small>
+
+          <strong>
+            Granted Indian Patent
+          </strong>
+
         </div>
+
+
+        <div class="meta">
+
+          <small>
+            Focus
+          </small>
+
+          <strong>
+            AgriTech AI
+          </strong>
+
+        </div>
+
 
       </div>
+
 
     </div>
 
@@ -1172,51 +2031,85 @@ footer{
 </section>
 
 
-<!-- WHY GRAINTECH -->
+
+<!-- =====================================================
+     WHY GRAINTECH
+===================================================== -->
+
 <section id="about" class="why">
 
   <div class="container">
 
+
     <div class="section-head">
 
       <div>
-        <div class="section-label">Why GrainTech</div>
-        <h2>Built for decisions,<br>not demos.</h2>
+
+        <div class="section-label">
+          Why GrainTech
+        </div>
+
+        <h2>
+          Built for decisions,<br>
+          not demos.
+        </h2>
+
       </div>
 
+
       <p>
-        We focus on applying technology where better decisions can
-        create measurable operational value.
+        We focus on applying technology where better decisions
+        can create measurable operational value.
       </p>
 
     </div>
 
 
+
     <div class="why-grid">
 
+
       <div class="why-item">
-        <h3>Practical AI</h3>
+
+        <h3>
+          Practical AI
+        </h3>
+
         <p>
           Technology designed around actual workflows, constraints
           and business problems.
         </p>
+
       </div>
 
+
       <div class="why-item">
-        <h3>Domain + Technology</h3>
+
+        <h3>
+          Domain + Technology
+        </h3>
+
         <p>
           We combine analytical thinking with AI and optimization
           techniques to solve complex problems.
         </p>
+
       </div>
 
+
       <div class="why-item">
-        <h3>From Model to Deployment</h3>
+
+        <h3>
+          From Model to Deployment
+        </h3>
+
         <p>
           Our focus extends beyond models to usable systems,
           workflows and decision-support tools.
         </p>
+
       </div>
+
 
     </div>
 
@@ -1225,14 +2118,21 @@ footer{
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
 <section id="contact" class="contact">
 
   <div class="container contact-layout">
 
+
     <div class="contact-copy">
 
-      <div class="section-label">Start a conversation</div>
+      <div class="section-label">
+        Start a conversation
+      </div>
 
       <h2>
         Have a problem<br>
@@ -1244,18 +2144,27 @@ footer{
         you want to improve. We will get back to you.
       </p>
 
-      <a class="email" href="mailto:info@graintechinnovations.com">
+      <a
+        class="email"
+        href="mailto:info@graintechinnovations.com"
+      >
         info@graintechinnovations.com
       </a>
 
     </div>
 
 
+
+    <!-- FORM -->
+
     <form
       class="contact-form"
       action="https://formsubmit.co/graintechinnovations@gmail.com"
       method="POST"
     >
+
+
+      <!-- FormSubmit configuration -->
 
       <input
         type="hidden"
@@ -1275,7 +2184,9 @@ footer{
         value="table"
       >
 
-      <!-- Honeypot -->
+
+      <!-- Honeypot anti-spam field -->
+
       <input
         type="text"
         name="_honey"
@@ -1285,12 +2196,14 @@ footer{
       >
 
 
+
       <input
         type="text"
         name="name"
         placeholder="Your name"
         required
       >
+
 
       <input
         type="email"
@@ -1306,6 +2219,7 @@ footer{
         placeholder="Company"
       >
 
+
       <input
         type="tel"
         name="phone"
@@ -1313,17 +2227,34 @@ footer{
       >
 
 
-      <select name="interest" class="full">
-        <option value="">What can we help with?</option>
-        <option value="Formula Optimization">Formula Optimization</option>
+
+      <select
+        name="interest"
+        class="full"
+      >
+
+        <option value="">
+          What can we help with?
+        </option>
+
+        <option value="Formula Optimization">
+          Formula Optimization
+        </option>
+
         <option value="Foundry Charge Mix Optimization">
           Foundry Charge Mix Optimization
         </option>
+
         <option value="AgriTech Intelligence">
           AgriTech Intelligence
         </option>
-        <option value="Other">Other</option>
+
+        <option value="Other">
+          Other
+        </option>
+
       </select>
+
 
 
       <textarea
@@ -1334,6 +2265,7 @@ footer{
       ></textarea>
 
 
+
       <button
         class="btn primary"
         type="submit"
@@ -1341,9 +2273,11 @@ footer{
         Send inquiry →
       </button>
 
+
       <div class="form-note">
         Your inquiry is submitted securely over HTTPS.
       </div>
+
 
     </form>
 
@@ -1352,7 +2286,11 @@ footer{
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer>
 
   <div class="container footer-inner">
@@ -1368,6 +2306,7 @@ footer{
   </div>
 
 </footer>
+
 
 </body>
 </html>
