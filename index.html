@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenTech Innovations | AI-Powered Industrial Optimization</title>
+<meta name="description" content="GreenTech Innovations builds AI-powered optimization and decision systems for cattle feed, foundry and agri-tech industries.">
+<style>
+:root{
+  --bg:#07100d; --bg2:#0b1713; --card:#0d1d17; --text:#eef5f0; --muted:#9eaea5;
+  --line:rgba(255,255,255,.10); --green:#8ee6a9; --green2:#3bbf70; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.container{width:min(1220px,92%);margin:auto}.nav{position:relative;z-index:5}.hero .container{position:relative;z-index:2}.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(to bottom,black,transparent 75%);pointer-events:none}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-size:20px;font-weight:750;letter-spacing:-.5px}
+.logo span{color:var(--green)}
+.navlinks{display:flex;gap:30px;color:#c3cec7;font-size:14px}
+.navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:1px solid rgba(142,230,169,.35);border-radius:999px;font-size:14px;font-weight:650;transition:.25s}
+.btn.primary{background:var(--green);color:#06100b;border-color:var(--green)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.hero{min-height:720px;display:grid;align-items:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(59,191,112,.18),transparent 68%);right:-160px;top:-100px}
+.eyebrow{color:var(--green);font-size:12px;text-transform:uppercase;letter-spacing:2.2px;font-weight:750;margin-bottom:20px}
+h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-4px;max-width:850px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p{color:var(--muted);font-size:18px;max-width:650px;margin:28px 0 34px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:80px;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.stat{background:rgba(8,18,14,.72);padding:24px}
+.stat strong{display:block;font-size:28px;letter-spacing:-1px}.stat span{color:var(--muted);font-size:12px}
+section{padding:115px 0}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}
+.section-head h2{font-size:48px;line-height:1.05;letter-spacing:-2px;max-width:650px}
+.section-head p{max-width:430px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(145deg,rgba(19,40,31,.92),rgba(7,17,13,.98));border:1px solid var(--line);border-radius:24px;padding:30px;min-height:350px;position:relative;overflow:hidden}
+.card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(142,230,169,.06);right:-70px;bottom:-70px}
+.number{color:var(--green);font-size:12px;font-weight:800;letter-spacing:2px}
+.card h3{font-size:28px;margin:65px 0 14px;letter-spacing:-1px}
+.card p{color:var(--muted);font-size:15px}
+.card a{position:absolute;bottom:28px;color:var(--green);font-size:13px;font-weight:700}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step{padding:28px;border-top:1px solid var(--green2);background:#0b1813}
+.step b{font-size:13px;color:var(--green)} .step h3{margin:28px 0 8px}.step p{font-size:14px;color:var(--muted)}
+.tech{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.techbox{border:1px solid var(--line);border-radius:24px;padding:34px;background:#09150f}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.pill{border:1px solid var(--line);padding:10px 14px;border-radius:999px;color:#cdd7d1;font-size:13px}
+.patent{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:stretch}
+.patent-copy,.patent-card{border:1px solid var(--line);border-radius:26px;padding:42px;background:linear-gradient(145deg,#102219,#09140f)}
+.patent-copy h2{font-size:52px;line-height:1;letter-spacing:-2px;margin:15px 0 22px}
+.patent-copy p{color:var(--muted);max-width:650px}
+.patent-card{display:flex;flex-direction:column;justify-content:space-between}
+.patent-card .label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green)}
+.patent-no{font-size:42px;font-weight:750;letter-spacing:-2px;margin-top:15px}
+.clients{text-align:center}
+.clients p{color:var(--muted);margin:12px auto 38px}
+.clientrow{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.client{border:1px solid var(--line);padding:15px 24px;border-radius:12px;color:#aebbb4;font-size:13px}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}.contact-copy{padding:42px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#10251b,#09140f)}.contact-copy h2{font-size:52px;line-height:1;letter-spacing:-2px;margin:14px 0 20px}.contact-copy p{color:var(--muted)}.contact-form{padding:38px;border:1px solid var(--line);border-radius:28px;background:#0b1813}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:16px}.field label{display:block;font-size:12px;color:#aebbb4;margin-bottom:7px}.field input,.field textarea,.field select{width:100%;border:1px solid rgba(255,255,255,.12);background:#07110d;color:#eef5f0;border-radius:12px;padding:14px;font:inherit;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:rgba(142,230,169,.65);box-shadow:0 0 0 3px rgba(142,230,169,.06)}.field textarea{min-height:125px;resize:vertical}.form-note{font-size:11px;color:#718079;margin-top:12px}.cta{padding:85px 30px;border:1px solid rgba(142,230,169,.22);border-radius:30px;background:radial-gradient(circle at 80% 20%,rgba(59,191,112,.14),transparent 35%),#0b1913;text-align:center}
+.cta h2{font-size:clamp(40px,5vw,64px);letter-spacing:-2.5px;line-height:1.05}
+.cta p{color:var(--muted);max-width:560px;margin:18px auto 30px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#819088;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:850px){.contact-grid{grid-template-columns:1fr}.contact-copy h2{font-size:42px}.form-row{grid-template-columns:1fr}
+ .navlinks{display:none}.hero{min-height:auto;padding:90px 0 40px}h1{letter-spacing:-2.5px}.stats{grid-template-columns:1fr 1fr}
+ .grid3,.process,.tech,.patent{grid-template-columns:1fr}.section-head{display:block}.section-head h2{font-size:40px;margin-bottom:20px}
+}
+@media(max-width:520px){.stats{grid-template-columns:1fr}.hero p{font-size:16px}section{padding:80px 0}.card{min-height:310px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">Green<span>Tech</span> Innovations</a>
+    <nav class="navlinks">
+      <a href="#solutions">Solutions</a><a href="#technology">Technology</a><a href="#patent">Innovation</a><a href="#about">About</a>
+    </nav>
+    <a class="btn" href="#contact">Talk to us →</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Industrial AI · Optimization · AgriTech</div>
+    <h1>Better decisions.<br><em>Optimized.</em></h1>
+    <p>GreenTech Innovations builds intelligent optimization systems that turn complex industrial data into practical, cost-effective decisions.</p>
+    <div class="actions">
+      <a class="btn primary" href="#solutions">Explore our solutions</a>
+      <a class="btn" href="#contact">Discuss a problem →</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>10+</strong><span>Clients served</span></div>
+      <div class="stat"><strong>01</strong><span>Granted Indian patent</span></div>
+      <div class="stat"><strong>AI</strong><span>Decision intelligence</span></div>
+      <div class="stat"><strong>3</strong><span>Industry solution areas</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="solutions">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Our solutions</div><h2>Purpose-built intelligence for real industrial problems.</h2></div>
+      <p>We combine domain knowledge, optimization mathematics, machine learning and automation to solve decisions where every percentage point matters.</p>
+    </div>
+    <div class="grid3">
+      <article class="card">
+        <div class="number">01 / FEED</div>
+        <h3>Formula Optimization</h3>
+        <p>Optimize cattle feed formulations against nutritional requirements, ingredient availability, cost targets and formulation constraints.</p>
+        <a href="#contact">Explore solution →</a>
+      </article>
+      <article class="card">
+        <div class="number">02 / FOUNDRY</div>
+        <h3>Charge Mix Optimization</h3>
+        <p>Find the right combination of raw materials to achieve target chemistry while minimizing material cost and improving consistency.</p>
+        <a href="#contact">Explore solution →</a>
+      </article>
+      <article class="card">
+        <div class="number">03 / AGRITECH</div>
+        <h3>AgriTech Intelligence</h3>
+        <p>AI-powered quality assessment and decision systems for agricultural procurement, warehousing, processing and quality workflows.</p>
+        <a href="#contact">Explore solution →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">How it works</div><h2>From raw data to a decision you can act on.</h2></div>
+      <p>Our systems are designed around the operational decision—not simply around a model.</p>
+    </div>
+    <div class="process">
+      <div class="step"><b>01</b><h3>Understand</h3><p>Map your process, constraints, objectives and available data.</p></div>
+      <div class="step"><b>02</b><h3>Model</h3><p>Build an optimization, ML or computer-vision engine around the problem.</p></div>
+      <div class="step"><b>03</b><h3>Optimize</h3><p>Generate recommendations that balance cost, quality and operational constraints.</p></div>
+      <div class="step"><b>04</b><h3>Deploy</h3><p>Put the intelligence into a usable workflow, dashboard or enterprise system.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="technology">
+  <div class="container">
+    <div class="tech">
+      <div class="techbox">
+        <div class="eyebrow">Technology</div>
+        <h2>Engineering intelligence, not just software.</h2>
+        <p style="color:var(--muted);margin-top:18px">Our solutions bring together multiple disciplines so the output is useful in the real world.</p>
+        <div class="pills">
+          <span class="pill">Mathematical Optimization</span><span class="pill">Machine Learning</span>
+          <span class="pill">Computer Vision</span><span class="pill">Predictive Analytics</span>
+          <span class="pill">AI & LLMs</span><span class="pill">Simulation</span>
+        </div>
+      </div>
+      <div class="techbox" style="display:flex;align-items:center;justify-content:center;min-height:330px">
+        <div style="text-align:center">
+          <div style="font-size:12px;color:var(--green);letter-spacing:2px;text-transform:uppercase">Decision Engine</div>
+          <div style="font-size:27px;font-weight:700;margin:18px 0">Data → Intelligence → Action</div>
+          <div style="color:var(--muted);font-size:14px">Designed around measurable business outcomes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="patent">
+  <div class="container">
+    <div class="patent">
+      <div class="patent-copy">
+        <div class="eyebrow">Innovation & IP</div>
+        <h2>Built on original technology.</h2>
+        <p>GreenTech Innovations has developed proprietary technology for automated, AI-enabled assessment of agricultural produce—combining controlled sample presentation, imaging and intelligent analysis.</p>
+        <a class="btn" href="#contact" style="margin-top:28px">Partner with us →</a>
+      </div>
+      <div class="patent-card">
+        <div><div class="label">Granted Indian Patent</div><div class="patent-no">Protected<br>Innovation</div></div>
+        <p style="color:var(--muted);font-size:14px">Automated AI-enabled technology for assessing the quality of agricultural produce through controlled imaging and intelligent analysis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="container">
+    <div class="eyebrow">Trusted in the field</div>
+    <h2 style="font-size:48px;letter-spacing:-2px">10+ clients. Real problems. Practical outcomes.</h2>
+    <p>Our technology is built with industry users and designed for measurable operational impact.</p>
+    <div class="clientrow">
+      <div class="client">Client / Partner</div><div class="client">Client / Partner</div><div class="client">Client / Partner</div>
+      <div class="client">Client / Partner</div><div class="client">Client / Partner</div><div class="client">+ more</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Why GreenTech</div><h2>We solve the decision behind the process.</h2></div>
+      <p>Generic software records what happened. Our systems help businesses decide what should happen next—and why.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <div class="eyebrow">Let's build something useful</div>
+        <h2>Bring us your hardest operational problem.</h2>
+        <p>Whether you are looking to reduce formulation cost, optimize foundry charge mix, automate quality assessment, or build a new decision system—we'd like to understand the problem.</p>
+        <div style="margin-top:38px;display:flex;gap:28px;flex-wrap:wrap">
+          <div><div style="font-size:11px;color:var(--green);letter-spacing:1.5px;text-transform:uppercase">Email</div><div style="margin-top:5px">hello@greentechinnovations.in</div></div>
+          <div><div style="font-size:11px;color:var(--green);letter-spacing:1.5px;text-transform:uppercase">Based in</div><div style="margin-top:5px">India · Working globally</div></div>
+        </div>
+      </div>
+      <form class="contact-form" action="mailto:hello@greentechinnovations.in" method="post" enctype="text/plain">
+        <div class="form-row">
+          <div class="field"><label>Your name</label><input name="Name" required placeholder="Enter your name"></div>
+          <div class="field"><label>Work email</label><input type="email" name="Email" required placeholder="you@company.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Company</label><input name="Company" placeholder="Company name"></div>
+          <div class="field"><label>Industry</label><select name="Industry"><option>Cattle Feed</option><option>Foundry</option><option>AgriTech</option><option>Other</option></select></div>
+        </div>
+        <div class="field"><label>What are you trying to optimize?</label><textarea name="Message" required placeholder="Tell us briefly about the problem, process or opportunity..."></textarea></div>
+        <button class="btn primary" type="submit" style="width:100%;cursor:pointer">Send enquiry →</button>
+        <div class="form-note">We'll use your information only to respond to your enquiry.</div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;gap:20px">
+    <span>© 2026 GreenTech Innovations. All rights reserved.</span>
+    <span>AI · Optimization · AgriTech</span>
+  </div>
+</footer>
+</body>
+</html>
